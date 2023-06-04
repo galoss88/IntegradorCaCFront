@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ticket.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="ContainerFormularioTickets">
+      <section class="cards">
+        <div class="containerCardEstudiante">
+          <h2>Estudiante</h2>
+          <span>Tienen un descuento</span>
+          <strong>80%</strong>
+          <span style="color: grey">* presentar documentación</span>
+        </div>
+        <div class="containerCardTraine">
+          <h2>Trainee</h2>
+          <span>Tienen un descuento</span>
+          <strong>50%</strong>
+          <span style="color: grey">* presentar documentación</span>
+        </div>
+        <div class="containerCardJunior">
+          <h2>Junior</h2>
+          <span>Tienen un descuento</span>
+          <strong>15%</strong>
+          <span style="color: grey">* presentar documentación</span>
+        </div>
+      </section>
+      <section class="formulario">
+        <h1
+          style="
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.5rem;
+          "
+        >
+          Valor de ticket $200
+        </h1>
+        <form class="form">
+          <div class="nombreApellido">
+            <input class="nombre" placeholder="Nombre" />
+            <input class="apellido" placeholder="Apellido" />
+          </div>
+          <div class="correo">
+            <input class="correo" placeholder="Correo" />
+          </div>
+          <div class="cantidadCategoria">
+            <div class="cantidad">
+              <label>Cantidad</label>
+              <input class="inputCantidad" placeholder="cantidad" />
+            </div>
+            <div class="categoria">
+              <label>Categoria</label>
+              <select class="selectCategoria">
+                <option>Estudiante</option>
+                <option>Traine</option>
+                <option>Junior</option>
+              </select>
+            </div>
+          </div>
+          <div class="totalPagar">
+            <span>Total a Pagar: Ingrese cantidad y categoria, por favor </span>
+          </div>
+          <div class="buttons">
+            <button class="button" onclick="borrarFormulario()">Borrar</button>
+            <button class="button" onclick="realizarCuenta()">Resumen</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

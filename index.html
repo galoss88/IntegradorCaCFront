@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="imagenTitulo">
+        <img src="./imagenes/codoacodo.png" />
+        <h1>Conf Bs As</h1>
+      </section>
+      <section class="links">
+        <a class="link" href="">La conferencia</a>
+        <a class="link" href="">Los oradores</a>
+        <a class="link" href="">El lugar y la fecha</a>
+        <a class="link" href="">Conviertete en orador</a>
+        <a class="linkTicket" href="#" onclick="loadTickets()"
+          >Comprar tickets</a
+        >
+      </section>
+    </header>
+    <main id="main">
+      <section class="fondoCiudad">
+        <section class="descripcion">
+          <div class="descripcionIMagen">
+            <h1>Conf Bs As</h1>
+            <p>
+              Bs As llega por primera vez a Argentina. Un evento para compartir
+              con nuestra comunidad el conocimiento y experiencia de los
+              expertos que estan creando un futuro de internet. Van a conocer a
+              miembros del evento, a otros estudiantes de Codo a Codo y los
+              oradores de primer nivel que tenemos para ti. Te esperamos!
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="buttonOrador">Quiero ser orador</button>
+            <button class="buttonTicket" onclick="loadTickets()">
+              Comprar tickets
+            </button>
+          </div>
+        </section>
+      </section>
+      <section class="oradores">
+        <div class="wrapperOradores">
+          <div class="tituloOradores">
+            <h4>Conoce a los</h4>
+            <h2>ORADORES</h2>
+          </div>
+          <div class="containerCards">
+            <div class="card">
+              <img class="imageCard" src="./imagenes/steve.jpg" />
+              <div class="name">
+                <h2>Steve Jobs</h2>
+                <div class="lenguaje">
+                  <label class="javascript">JavasCript</label>
+                  <label class="react">React</label>
+                </div>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia sint optio rem asperiores, tempore, iusto veritatis
+                sequi quisquam cupiditate odit illum vero neque voluptatum,
+                corporis iste recusandae! Impedit, dolorem sunt?
+              </p>
+            </div>
+            <div class="card">
+              <img class="imageCard" src="./imagenes/bill.jpg" />
+              <div class="name">
+                <h2>Bill Gates</h2>
+                <div class="lenguaje">
+                  <label class="javascript">JavasCript</label>
+                  <label class="react">React</label>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis temporibus amet dicta sint non dolorem eum quia odit
+                ipsa. Magnam recusandae ut fuga! Cum facere consequuntur,
+                ducimus quis fuga veniam.
+              </p>
+            </div>
+            <div class="card">
+              <img class="imageCard" src="./imagenes/ada.jpeg" />
+              <div class="name">
+                <h2>Ada Lovelace</h2>
+                <div class="lenguaje">
+                  <label class="javascript">JavasCript</label>
+                  <label class="react">React</label>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                voluptatum aperiam suscipit, accusantium aliquid tempora
+                recusandae a dicta non, labore amet ab cum eveniet officiis.
+                Nesciunt laborum eveniet doloremque ipsa?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="descriptionBsAs">
+        <div class="imagenBsAs">
+          <img class="honolulu" src="./imagenes/honolulu.jpg" />
+        </div>
+        <div class="descripcionHonolulu">
+          <h1>Bs As - Octubre</h1>
+          <p>
+            Buenos Aires es la provincia y la localidad mas grande del estado de
+            Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre
+            las principales ciudades estadounidenses. Aunque el nombre de
+            Honolulu se refiere al area urbana en la costa sureste de la isla de
+            Oahu, la ciudad y el condado de Honolulu han formado una
+            ciudad-condado consolidada que cubre toda la ciudad(aproximadamente
+            600 km2 de superficie)
+          </p>
+          <button>Conocé más</button>
+        </div>
+      </section>
+      <section class="formularioOrador">
+        <form class="formOrador">
+          <div class="tituloForm">
+            <label>CONVIERTETE EN UN</label>
+            <h1>ORADOR</h1>
+            <p>
+              Anotate como orador para dar una charla ignite. Cuentanos de que
+              quieres hablar!
+            </p>
+          </div>
+          <div class="formulario">
+            <div class="inputNameApellido">
+              <input class="nombre" placeholder="Nombre" />
+              <input class="apellido" placeholder="Apellido" />
+            </div>
+            <div class="inputArea">
+              <textarea
+                class="textArea"
+                placeholder="Sobré que quieres hablar?"
+              ></textarea>
+              <label>Recuerda incluir un titulo para tu charla</label>
+            </div>
+          </div>
+          <button>Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footerContainerLinks">
+        <a href="#">Preguntas Frecuentes</a>
+        <a href="#">Contactanos</a>
+        <a href="#">Prensa</a>
+        <a href="#">Conferencias</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Estudiantes</a>
+      </section>
+    </footer>
+
+    <script src="./scripts/loadTickets.js"></script>
+    <script src="./scripts/realizarCuenta.js"></script>
+  </body>
+</html>
